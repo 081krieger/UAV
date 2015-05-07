@@ -1,0 +1,32 @@
+Launching /usr/bin/avrdude -pm328p -carduino -P/dev/ttyUSB0 -b57600 -Uflash:w:UAV.hex:a 
+Output:
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: Device signature = 0x1e950f
+avrdude: NOTE: "flash" memory has been specified, an erase cycle will be performed
+         To disable this feature, specify the -D option.
+avrdude: erasing chip
+avrdude: reading input file "UAV.hex"
+avrdude: input file UAV.hex auto detected as Intel Hex
+avrdude: writing flash (516 bytes):
+
+Writing | ################################################## | 100% 0.17s
+
+avrdude: 516 bytes of flash written
+avrdude: verifying flash memory against UAV.hex:
+avrdude: load data flash data from input file UAV.hex:
+avrdude: input file UAV.hex auto detected as Intel Hex
+avrdude: input file UAV.hex contains 516 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 0.13s
+
+avrdude: verifying ...
+avrdude: 516 bytes of flash verified
+
+avrdude done.  Thank you.
+
+avrdude finished
